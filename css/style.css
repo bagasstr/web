@@ -1,0 +1,959 @@
+/* -- Font-google -- */
+/* bagian ini untuk import css dari google font dan ini 100% no copyrigth */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* -- reset css -- */
+/* bagian ini untuk me-reset atau mengatur ulang semua element HTMl di dalam browser */
+*,
+::after,
+::before {
+   padding: 0; /* padding 0 untuk mereset seluruh padding pada elemen html*/
+   margin: 0; /* margin 0 untuk mereset seluruh margin pada elemen html*/
+   box-sizing: border-box; /* digunakan untuk merubah kalkulasi dalam mengukur lebar element */
+   list-style: none; /* list style: none; digunakan untuk menghilangkan tiik bulat pada elemen <ul> */
+   text-decoration: none; /* digunakan untuk menghilangkan garis bawah pada text */
+}
+/* -- end reset css -- */
+
+/* -- body html css -- */
+body,
+html {
+   font-family: "Poppins";
+   scroll-behavior: smooth;
+   /* width: 100%; */
+   /* background-color: var(--bg); */
+}
+/* -- end body html css -- */
+
+/* -- root variable -- */
+:root {
+   --color-font: #2c3333;
+   --color-accent: #395b64;
+   --color-accent2: #a5c9ca;
+   --bg: #e7f6f2;
+}
+
+#header.sticky {
+   background-color: var(--color-accent);
+   padding: 0.5rem 0;
+}
+
+#nav-menu.show {
+   top: 55px;
+}
+
+.btn {
+   display: block;
+}
+
+/* -- START HEADER -- */
+.header-section {
+   transition: 0.5s;
+   z-index: 99999;
+   padding: 1rem 0;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.header-section > .container {
+   padding: 0 5rem;
+}
+
+.header-section .container > .header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-section .container .header > .logo {
+   font-weight: 600;
+   font-size: 1.5rem;
+   color: var(--bg);
+}
+
+.header-section .container .header > .nav-menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 2rem;
+}
+
+.header-section .container .header .nav-menu .nav-list > .nav-link {
+   font-weight: 400;
+   font-size: 1rem;
+   color: var(--bg);
+}
+
+.header-section .container .header .nav-menu .nav-list > .nav-link:hover {
+   font-weight: 400;
+   font-size: 1rem;
+   color: var(--color-accent2);
+}
+
+.header-section > .container > .header > .btn-menu {
+   color: var(--bg);
+}
+
+/* END HEADER */
+
+/* START HERO */
+.hero-section {
+   padding: 6rem 0 2rem 0;
+   padding-top: 2rem;
+   /* background-color: transparent; */
+   background-size: cover;
+   background-position: 0 40%;
+   background-image: linear-gradient(rgba(3, 3, 3, 0.651), rgba(3, 3, 3, 0.651)), url(/img/hero.jpg);
+}
+
+.hero-section > .container {
+   padding: 0 5rem;
+   /* background-color: transparent; */
+}
+
+.hero-section .container > .hero {
+   height: 20rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hero-section .container .hero > .heading-hero {
+   font-size: 2.5rem;
+   color: var(--color-accent2);
+}
+.hero-section .container .hero > .tagline {
+   color: var(--bg);
+   font-size: 1.3rem;
+}
+/* END HERO */
+
+/* START AGENCY */
+.agency-section {
+   padding: 6rem 0 2rem 0;
+}
+
+.agency-section > .container {
+   padding: 0 5rem;
+}
+
+.agency-section .container > .agency {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 2rem;
+}
+
+.agency-section .container .agency > .kiri > h1,
+p {
+   color: var(--color-font);
+}
+
+.agency-section .container > .agency > .kanan {
+   width: 100%;
+}
+
+.agency-section .container > .agency > .kanan > img {
+   /* background-color: aqua; */
+   width: 100%;
+}
+
+/* END AGENCY */
+
+/* START TENTANG */
+.tentang-section {
+   padding: 6rem 0 2rem 0;
+}
+
+.tentang-section > .container {
+   padding: 0 5rem;
+}
+
+.tentang-section .container > .tentang {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   column-gap: 2rem;
+}
+
+.tentang-section .container .tentang > .kiri {
+   width: 300px;
+}
+
+.tentang-section .container .tentang .kiri > img {
+   width: 100%;
+}
+
+.tentang-section .container .tentang > .kanan > h1,
+p {
+   color: var(--color-font);
+}
+
+/* END TENTANG */
+
+/* START LAYANAN */
+.layanan-section {
+   padding: 6rem 0 2rem 0;
+}
+
+.layanan-section > .container {
+   padding: 0 5rem;
+}
+
+.layanan-section .container .layanan > h1,
+h2,
+p {
+   color: var(--color-font);
+}
+
+.layanan-section .container .layanan > h2 {
+   font-weight: 500;
+   margin-bottom: 1rem;
+   color: var(--color-accent);
+}
+
+.layanan-section .container > .layanan > .grid {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   column-gap: 2rem;
+   margin-top: 2rem;
+}
+
+.layanan-section .container > .layanan > .grid > .text {
+   color: var(--color-font);
+}
+
+.layanan-section .container > .layanan > .grid > .text > h3 {
+   color: var(--color-accent);
+   font-weight: 600;
+   margin-bottom: 1rem;
+}
+
+/* END LAYANAN */
+
+/* START PROSES */
+.proses-section {
+   padding: 6rem 0 2rem 0;
+}
+
+.proses-section > .container {
+   padding: 0 5rem;
+}
+
+.proses-section .container > .proses > h1,
+p {
+   color: var(--color-font);
+}
+
+.proses-section .container > .proses > .box-proses {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 2rem;
+   margin-top: 2rem;
+}
+
+.proses-section .container > .proses > .box-proses > .grid {
+   text-align: center;
+   background-color: var(--color-accent2);
+   border-radius: 5px;
+   padding: 1rem;
+}
+
+.proses-section .container > .proses > .box-proses > .grid > i {
+   font-size: 2.5rem;
+}
+
+.proses-section .container > .proses > .box-proses > .grid > i,
+p {
+   color: var(--color-accent);
+}
+/* END PROSES */
+
+/* START PORTOFOLIO */
+.portofolio-section {
+   padding: 6rem 0 2rem 0;
+}
+
+.portofolio-section > .container {
+   padding: 0 5rem;
+}
+
+.portofolio-section > .container > h1,
+p {
+   color: var(--color-font);
+}
+
+.portofolio-section > .container > .portofolio > .img {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 2rem;
+   justify-content: center;
+   margin-top: 1.5rem;
+}
+
+.portofolio-section > .container > .portofolio > .img > .img {
+   width: 100%;
+   /* background-color: var(--color-accent); */
+   border-radius: 4px;
+   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.portofolio-section > .container > .portofolio > .img > .img:hover {
+   transition: 0.2s;
+   border-radius: 4px;
+   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.541);
+   -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.541);
+   -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.541);
+}
+
+.portofolio-section > .container > .portofolio > .img > .img > img {
+   border-radius: 4px;
+   height: 100%;
+   width: 100%;
+}
+
+.portofolio-section > .container > .portofolio > .btn-portofolio {
+   text-align: center;
+   margin-top: 4rem;
+}
+
+.portofolio-section > .container > .portofolio > .btn-portofolio > a {
+   background-color: var(--color-accent2);
+   color: var(--color-font);
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   font-weight: 600;
+}
+
+.portofolio-section > .container > .portofolio > .btn-portofolio > a:hover {
+   background-color: var(--color-accent);
+   color: var(--color-accent2);
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   font-weight: 600;
+}
+/* END PORTOFOLIO */
+
+/* START KONTAK */
+.kontak-section {
+   padding-top: 2rem;
+   padding: 4rem 0;
+}
+
+.kontak-section > .container {
+   padding: 0rem 5rem;
+}
+
+.kontak-section > .container > .kontak {
+   text-align: center;
+}
+
+.kontak-section > .container > .kontak > h1,
+p {
+   color: var(--color-font);
+}
+
+.kontak-section > .container > .kontak > p > a {
+   color: var(--color-accent);
+   font-weight: 500;
+}
+
+.box-kotak {
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+}
+
+.box-kotak > .box-content {
+   border: 1rem solid var(--color-accent);
+   padding: 2rem;
+   border-radius: 5px;
+   width: 40rem;
+}
+
+.box-kotak > .box-content > form > h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.box-kotak > .box-content > form > .name-field > .firstName > input,
+.lastName > input,
+.email > input {
+   width: 100%;
+   height: 1.5rem;
+}
+
+.box-kotak > .box-content > form > .ket > textarea {
+   width: 100%;
+}
+
+.box-kotak > .box-content > form > .name-field > .firstName > input:focus,
+.lastName > input:focus,
+.email > input:focus,
+.ket > textarea:focus {
+   padding: 5px;
+}
+
+.box-kotak > .box-content > form > .name-field > .firstName > input:focus,
+.lastName > input:focus,
+.email > input:focus,
+.ket > textarea:focus {
+   outline: none !important;
+   border: 2px solid var(--color-accent);
+   border-radius: 3px;
+}
+
+.box-kotak > .box-content > .btn-kontak {
+   width: 100%;
+   text-align: center;
+}
+
+.box-kotak > .box-content > .btn-kontak > .btn {
+   width: 100%;
+   border: none;
+   padding: 0.5rem 0;
+   border-radius: 2px;
+   background-color: var(--color-accent);
+   height: 100%;
+   color: var(--color-accent2);
+   font-weight: 500;
+   font-size: 1rem;
+   text-align: center;
+}
+
+/* END KONTAK */
+
+/* START FOOTER */
+.footer-section {
+   padding: 4rem 0;
+   background-color: var(--color-accent);
+}
+
+.footer-section > .container {
+   padding: 0rem 5rem;
+}
+
+.footer-section > .container > .footer {
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+   justify-content: space-between;
+}
+
+.footer-section > .container > .footer > .grid > h2,
+.copy,
+.grid > li > a {
+   color: #e7f6f2;
+}
+
+.footer-section > .container > .footer > .grid > p,
+li > a {
+   font-weight: 300;
+   font-size: 14px;
+}
+/* END FOOTER */
+
+/* =========================================================================== */
+/* =============================== MEDIA QUERY =============================== */
+/* =========================================================================== */
+/* Mobile potrait*/
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+   .header-section > .container,
+   .hero-section > .container,
+   .agency-section > .container,
+   .tentang-section > .container,
+   .layanan-section > .container,
+   .proses-section > .container,
+   .portofolio-section > .container,
+   .kontak-section > .container,
+   .kontak-section > .container,
+   .footer-section > .container {
+      padding: 0 1rem;
+   }
+   .hero-section,
+   .agency-section,
+   .tentang-section,
+   .layanan-section,
+   .proses-section,
+   .portofolio-section,
+   .kontak-section {
+      padding: 3rem 0 2rem 0;
+   }
+   .header-section > .container > .header > .logo {
+      font-size: 17px;
+   }
+   .header-section > .container > .header > .btn-menu {
+      display: block;
+   }
+
+   .header-section > .container > .header > .btn-menu > .ri-close-fill {
+      display: none;
+   }
+   .header-section > .container > .header > .nav-menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -900%;
+      padding: 2rem 0;
+      left: 0;
+      right: 0;
+      background-color: var(--color-accent);
+      margin: 0 3rem;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+   }
+
+   .hero-section > .container > .hero > .heading-hero {
+      font-size: 20px;
+   }
+
+   .hero-section > .container > .hero > .tagline {
+      font-size: 14px;
+      font-weight: 300;
+   }
+   .agency-section > .container > .agency {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      row-gap: 1rem;
+   }
+   .agency-section > .container > .agency > .kiri > h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+   }
+   .agency-section > .container > .agency > .kiri > p {
+      font-size: 18px;
+   }
+
+   .tentang-section > .container > .tentang {
+      /* display: grid; */
+      /* grid-template-columns: repeat(1, 1fr); */
+      /* grid-auto-flow: revert-layer; */
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .tentang-section > .container > .tentang > .kanan {
+      margin-bottom: 1rem;
+      margin-bottom: 1rem;
+   }
+   .tentang-section > .container > .tentang > .kanan > h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+   }
+   .tentang-section > .container > .tentang > .kanan > p {
+      font-size: 18px;
+   }
+   .tentang-section > .container > .tentang > .kiri {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .tentang-section > .container > .tentang > .kiri > img {
+      width: 100%;
+   }
+
+   .layanan-section > .container > .layanan > h1 {
+      font-size: 24px;
+   }
+   .layanan-section > .container > .layanan > h2 {
+      font-size: 20px;
+   }
+   .layanan-section > .container > .layanan > p {
+      font-size: 18px;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan,
+   .layanan-section > .container > .layanan > .home_grid3-layanan {
+      display: flex;
+      flex-direction: column;
+   }
+   .layanan-section > .container > .layanan > .home_grid2-layanan {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan > .image,
+   .layanan-section > .container > .layanan > .home_grid3-layanan > .image,
+   .layanan-section > .container > .layanan > .home_grid2-layanan > .image {
+      width: 100%;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan > .image > img,
+   .layanan-section > .container > .layanan > .home_grid3-layanan > .image > img,
+   .layanan-section > .container > .layanan > .home_grid2-layanan > .image > img {
+      width: 100%;
+   }
+
+   .proses-section > .container > .proses > h1 {
+      font-size: 24px;
+   }
+   .proses-section > .container > .proses > .box-proses {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+   }
+
+   .portofolio-section > .container > .portofolio > h1 {
+      font-size: 24px;
+   }
+   .portofolio-section > .container > .portofolio > .img {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+   }
+
+   .kontak-section > .container > .kontak > h1 {
+      font-size: 24px;
+   }
+   .kontak-section > .container > .kontak > .box-kotak {
+      width: 100%;
+   }
+   .kontak-section > .container > .kontak > .box-kotak > {
+      width: 100%;
+   }
+
+   .footer-section > .container > .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+   .header-section > .container,
+   .hero-section > .container,
+   .agency-section > .container,
+   .tentang-section > .container,
+   .layanan-section > .container,
+   .proses-section > .container,
+   .portofolio-section > .container,
+   .kontak-section > .container,
+   .kontak-section > .container,
+   .footer-section > .container {
+      padding: 0 1rem;
+   }
+   .hero-section,
+   .agency-section,
+   .tentang-section,
+   .layanan-section,
+   .proses-section,
+   .portofolio-section,
+   .kontak-section {
+      padding: 3rem 0 2rem 0;
+   }
+   .header-section > .container > .header > .logo {
+      font-size: 17px;
+   }
+   .header-section > .container > .header > .btn-menu {
+      display: block;
+   }
+
+   .header-section > .container > .header > .btn-menu > .ri-close-fill {
+      display: none;
+   }
+   .header-section > .container > .header > .nav-menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -900%;
+      padding: 2rem 0;
+      left: 0;
+      right: 0;
+      background-color: var(--color-accent);
+      margin: 0 3rem;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+   }
+
+   .hero-section > .container > .hero > .heading-hero {
+      font-size: 20px;
+   }
+
+   .hero-section > .container > .hero > .tagline {
+      font-size: 14px;
+      font-weight: 300;
+   }
+   .agency-section > .container > .agency {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      row-gap: 1rem;
+   }
+   .agency-section > .container > .agency > .kiri > h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+   }
+   .agency-section > .container > .agency > .kiri > p {
+      font-size: 18px;
+   }
+
+   .tentang-section > .container > .tentang {
+      /* display: grid; */
+      /* grid-template-columns: repeat(1, 1fr); */
+      /* grid-auto-flow: revert-layer; */
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .tentang-section > .container > .tentang > .kanan {
+      margin-bottom: 1rem;
+      margin-bottom: 1rem;
+   }
+   .tentang-section > .container > .tentang > .kanan > h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+   }
+   .tentang-section > .container > .tentang > .kanan > p {
+      font-size: 18px;
+   }
+   .tentang-section > .container > .tentang > .kiri {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .tentang-section > .container > .tentang > .kiri > img {
+      width: 100%;
+   }
+
+   .layanan-section > .container > .layanan > h1 {
+      font-size: 24px;
+   }
+   .layanan-section > .container > .layanan > h2 {
+      font-size: 20px;
+   }
+   .layanan-section > .container > .layanan > p {
+      font-size: 18px;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan,
+   .layanan-section > .container > .layanan > .home_grid3-layanan {
+      display: flex;
+      flex-direction: column;
+   }
+   .layanan-section > .container > .layanan > .home_grid2-layanan {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan > .image,
+   .layanan-section > .container > .layanan > .home_grid3-layanan > .image,
+   .layanan-section > .container > .layanan > .home_grid2-layanan > .image {
+      width: 100%;
+   }
+
+   .layanan-section > .container > .layanan > .home_grid1-layanan > .image > img,
+   .layanan-section > .container > .layanan > .home_grid3-layanan > .image > img,
+   .layanan-section > .container > .layanan > .home_grid2-layanan > .image > img {
+      width: 100%;
+   }
+
+   .proses-section > .container > .proses > h1 {
+      font-size: 24px;
+   }
+   .proses-section > .container > .proses > .box-proses {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+   }
+
+   .portofolio-section > .container > .portofolio > h1 {
+      font-size: 24px;
+   }
+   .portofolio-section > .container > .portofolio > .img {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+   }
+
+   .kontak-section > .container > .kontak > h1 {
+      font-size: 24px;
+   }
+   .kontak-section > .container > .kontak > .box-kotak {
+      width: 100%;
+   }
+   .kontak-section > .container > .kontak > .box-kotak > {
+      width: 100%;
+   }
+
+   .footer-section > .container > .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+/* Mobile landscape*/
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+   .header-section > .container,
+   .hero-section > .container,
+   .agency-section > .container,
+   .tentang-section > .container,
+   .layanan-section > .container,
+   .proses-section > .container,
+   .portofolio-section > .container,
+   .kontak-section > .container,
+   .kontak-section > .container,
+   .footer-section > .container {
+      padding: 0 1rem;
+   }
+   .footer-section > .container > .footer > .grid > h2,
+   .copy,
+   .grid > li > a {
+      color: #e7f6f2;
+   }
+
+   .footer-section > .container > .footer > .grid > h2 {
+      font-size: 18px;
+   }
+
+   .footer-section > .container > .footer > .grid > p,
+   li > a {
+      font-weight: 300;
+      font-size: 10px;
+   }
+   .header-section > .container > .header > .btn-menu {
+      display: block;
+   }
+
+   .header-section > .container > .header > .btn-menu > .ri-close-fill {
+      display: none;
+   }
+   .header-section > .container > .header > .nav-menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -900%;
+      padding: 2rem 0;
+      left: 0;
+      right: 0;
+      background-color: var(--color-accent);
+      margin: 0 3rem;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+   }
+}
+
+/* Tablet portrait*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+   .header-section > .container,
+   .hero-section > .container,
+   .agency-section > .container,
+   .tentang-section > .container,
+   .layanan-section > .container,
+   .proses-section > .container,
+   .portofolio-section > .container,
+   .kontak-section > .container,
+   .footer-section .container {
+      padding: 0 3rem;
+   }
+
+   .header-section > .container > .header > .logo {
+      font-size: 22px;
+   }
+
+   .header-section > .container > .header > .nav-menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -900%;
+      padding: 2rem 0;
+      left: 0;
+      right: 0;
+      background-color: var(--color-accent);
+      margin: 0 3rem;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+   }
+
+   .header-section > .container > .header > .nav-menu > .nav-list {
+      padding: 0.5rem 0;
+   }
+
+   .header-section > .container > .header > .nav-menu > .nav-list:hover {
+      text-align: center;
+      background-color: var(--color-font);
+      width: 100%;
+      padding: 0.5rem 0;
+   }
+
+   .header-section > .container > .header > .btn-menu {
+      display: block;
+   }
+
+   .header-section > .container > .header > .btn-menu > .ri-close-fill {
+      display: none;
+   }
+
+   h1 {
+      font-size: 22px;
+   }
+
+   p {
+      font-size: 13px;
+   }
+
+   .footer-section > .container > .footer > .grid > h2,
+   .copy,
+   .grid > li > a {
+      color: #e7f6f2;
+   }
+
+   .footer-section > .container > .footer > .grid > h2 {
+      font-size: 18px;
+   }
+
+   .footer-section > .container > .footer > .grid > p,
+   li > a {
+      font-weight: 300;
+      font-size: 12px;
+   }
+}
+
+/* Tablet landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   .header-section > .container,
+   .hero-section > .container,
+   .agency-section > .container,
+   .tentang-section > .container,
+   .layanan-section > .container,
+   .proses-section > .container,
+   .portofolio-section > .container,
+   .kontak-section > .container {
+      padding: 0 3rem;
+   }
+   .hero-section,
+   .agency-section,
+   .tentang-section,
+   .layanan-section,
+   .proses-section,
+   .portofolio-section,
+   .kontak-section {
+      padding: 4rem 0 2rem 0;
+   }
+
+   .header-section > .container > .header > .btn-menu {
+      display: none;
+   }
+
+   .header-section > .container > .header > .logo {
+      font-size: 22px;
+   }
+
+   h1 {
+      font-size: 28px;
+   }
+   p {
+      font-size: 15px;
+   }
+}
+
+/* Laptop */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+   .header-section > .container > .header > .btn-menu {
+      display: none;
+   }
+}
+
+/* Desktop */
+@media screen and (min-width: 1281px) {
+   .header-section > .container > .header > .btn-menu {
+      display: none;
+   }
+}
